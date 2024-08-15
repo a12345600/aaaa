@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>流动横幅</title>
+
+<style>
+
+.banner {
+
+width: 100%;
+
+height: 50px;
+
+background-color: #333;
+
+color: #fff;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+overflow: hidden;
+
+position: relative;
+
+}
+
+.banner-text {
+
+position: relative;
+
+animation: marquee 10s linear infinite;
+
+white-space: nowrap;
+
+}
+
+@keyframes marquee {
+
+0% { left: 100%; }
+
+100% { left: -100%; }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="banner">
+
+<span class="banner-text">这是一个流动的横幅文本示例</span>
+
+</div>
+
+</body>
+
+</html>
